@@ -175,7 +175,7 @@ const TodoList: React.FC = () => {
                   <div className="flex justify-center items-center gap-3">
                     <button
                       onClick={() => setEditingTodo(todo)}
-                      className="bg-yellow-500 text-white px-2 py-1 rounded mr-2"
+                      className="bg-green-500 text-white px-2 py-1 rounded mr-2"
                     >
                       Edit
                     </button>
