@@ -226,8 +226,8 @@ const TodoList: React.FC = () => {
       {isLoading && <div className="loader"></div>}
       {error && (
         <div className="flex justify-between items-center flex-col gap-3 max-w-[1200px] mx-auto my-0 mt-4">
-          <p>Error: {error}</p>
-          <p>Please try again...</p>
+          <p className="text-center">Error: {error}</p>
+          <p className="text-center">Please try again...</p>
         </div>
       )}
     </>
