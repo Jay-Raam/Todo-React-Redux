@@ -4,10 +4,10 @@ My name is Jayasriraam, and I’m a front-end Developer based in Chennai.I am cr
 
 ## Features
 
-**Add tasks:** Easily add tasks with a title.
-**List tasks:** View all tasks currently in the list.
-**Edit tasks:** Editing tasks title.
-**Delete tasks:** Remove tasks that you no longer need.
+**Add tasks:** Easily add tasks with a title. <br/>
+**List tasks:** View all tasks currently in the list. <br/>
+**Edit tasks:** Editing tasks title.<br/>
+**Delete tasks:** Remove tasks that you no longer need.<br/>
 
 ## Tech Stack
 
