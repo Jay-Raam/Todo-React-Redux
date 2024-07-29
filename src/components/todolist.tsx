@@ -107,7 +107,6 @@ const TodoList: React.FC = () => {
   return (
     <>
       <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5">
           <div className="input w-72">
             <div className="relative w-full min-w-[200px] h-10">
