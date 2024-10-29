@@ -36,7 +36,7 @@ const UserTable: React.FC = () => {
 
   return (
     <>
-      <div className="relative overflow-x-auto  max-w-[1200px] mx-auto my-0  md:mt-[100px] mb-3">
+      <div className="relative overflow-x-auto  max-w-[1200px] mx-auto my-0 mt-[100px] md:mt-8 mb-3">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -60,7 +60,41 @@ const UserTable: React.FC = () => {
             ))}
           </tbody>
         </table>
-        {loading && <div className="loader mt-4"></div>}
+        {loading && (
+          <div className="flex justify-center items-center mt-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-dasharray="16"
+                stroke-dashoffset="16"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 3c4.97 0 9 4.03 9 9"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.2s"
+                  values="16;0"
+                />
+                <animateTransform
+                  attributeName="transform"
+                  dur="1.5s"
+                  repeatCount="indefinite"
+                  type="rotate"
+                  values="0 12 12;360 12 12"
+                />
+              </path>
+            </svg>
+          </div>
+        )}
         {error && (
           <div className="flex justify-between items-center flex-col gap-3 mt-4 ">
             <p className="text-center text-black">Error: {error}</p>
